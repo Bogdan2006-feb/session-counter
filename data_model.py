@@ -17,7 +17,7 @@ class DataModel:
         }
 
     @classmethod
-    def from_dict(cls, dict) -> 'DataModel':
+    def from_dict(cls, data) -> 'DataModel':
         obj = cls()
         obj.total_visits = data.get('total_visits', 0)
         obj.unique_ips = set(data.get('unique_ips', []))
