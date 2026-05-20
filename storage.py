@@ -6,7 +6,7 @@ import os
 class Storage(ABC):
 
     @abstractmethod
-    def save(self, data: dict) -> None:
+    def save(self, dict) -> None:
         pass
 
     @abstractmethod
